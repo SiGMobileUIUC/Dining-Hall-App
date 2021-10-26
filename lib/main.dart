@@ -62,10 +62,17 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'UIUC Dining Hall Reviews',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 40, color: Colors.white),
+              style: TextStyle(
+                  fontSize: 40,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
             ),
             const Image(image: AssetImage('assets/i.png')),
             TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.black,
+                  padding: const EdgeInsets.all(30),
+                ),
                 onPressed: () {},
                 child: const Text(
                   "Sign In",
